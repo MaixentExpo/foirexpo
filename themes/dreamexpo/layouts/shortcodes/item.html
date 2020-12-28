@@ -1,0 +1,17 @@
+<!-- 
+    Affichage d'une liste d'items
+-->
+{{$icon := .Get "icone" | default "chevron right"}}
+{{$content := .Get "texte" | default ""}}
+{{$lien := .Get "lien" | default ""}}
+
+<div class="item">
+    <i class="{{$icon}} icon"></i>
+    <div class="content">
+        {{if $lien}}
+        <a href="{{$lien}}" target="_blank">{{$content}}</a>
+        {{else}}
+        {{$content}}
+        {{end}}
+    </div>
+</div>

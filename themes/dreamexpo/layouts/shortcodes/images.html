@@ -1,0 +1,16 @@
+<!-- 
+    Affichage des images d'un répertoire
+    dir   : répertoire sous static des images
+    class : class css semantic à appliquer
+-->
+<div class="ui centered relaxed grid dream-grid">
+    {{$dir := .Get "dir"}}
+    {{$class := .Get "class"}}
+    {{$path := (printf "/content/%s" $dir )}}
+    {{ range (readDir $path) }}
+    {{$path := (printf "%s/%s" $dir .Name )}}
+    <div class="{{ $class }}">
+        <img src="{{ $path }}">
+    </div>
+    {{ end }}
+</div>

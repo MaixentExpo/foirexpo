@@ -1,0 +1,13 @@
+<nav class="ui secondary menu dream-menu">
+  <a class="item" href="{{ .Site.BaseURL }}" style="color: black !important;">
+    <i class="large link home icon" title="{{ i18n `home` }}"></i>
+  </a>
+  {{ if .Site.IsServer }}
+  {{ if .Site.Params.HugoServerEditUrl }}
+  <a class="item" href="/site/help" style="color: black !important;">
+    <i class="large link question circle outline icon" title="{{ i18n `home` }}"></i>
+  </a>
+  {{end}}
+  {{end}}
+
+</nav>

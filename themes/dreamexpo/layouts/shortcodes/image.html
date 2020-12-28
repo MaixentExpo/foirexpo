@@ -1,0 +1,29 @@
+<!-- 
+    Affichage d'une image
+    fichier: chemin du fichier
+    position: gauche, droite
+    taille: mini, petite, moyenne, large
+    titre: titre en dessous de l'image
+    lien: url vers le document
+-->
+{{$src := .Get "image"}}
+{{$size := .Get "taille" | default ""}}
+{{$pos := .Get "position" | default "centered"}}
+{{$legend := .Get "titre"}}
+{{$url := .Get "lien"}}
+{{if eq $size "mini"}}{{$size = "tiny"}}{{else if eq $size "petite"}}{{$size = "small"}}{{else if eq $size "moyenne"}}{{$size = "medium"}}{{else if eq $size "grande"}}{{$size = "large"}}{{else}}{{$size = "big"}}{{end}}
+{{if eq $pos "gauche"}}{{$pos = "left floated"}}{{else if eq $pos "droite"}}{{$pos = "right floated"}}{{end}}
+<div class="ui compact center aligned segment">
+    {{if $url}}
+    <a class="image" href="{{ $url }}" target="_blank">
+        <img class="ui {{$size}} image" src="{{ $src }}"></img>
+    </a>
+    {{else}}
+    <div class="image">
+        <img class="ui {{$size}} image" src="{{ $src }}"></img>
+    </div>
+    {{end}}
+    {{if $legend}}
+    <b>{{ $legend }}</b>
+    {{end}}
+</div>

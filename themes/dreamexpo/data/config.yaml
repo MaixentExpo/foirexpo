@@ -1,0 +1,15 @@
+#
+# Personnalisation du Site
+# à redéfinir dans /data/config.yaml
+#
+title: "TITRE DU SITE"
+subtitle: "Sous-titre du site"
+
+# l'image arrondie
+avatar: "/img/hugo.png"
+
+# l'icône dans l'onglet du navigateur
+favicon: "/img/hugoSM.png"
+
+# l'image d'arrière
+backgroundImage: "/img/hugo-background.jpg"

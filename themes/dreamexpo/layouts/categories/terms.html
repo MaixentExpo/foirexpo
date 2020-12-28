@@ -1,0 +1,37 @@
+{{ define "title" }}
+{{- T "archives" -}}
+{{ end }}
+
+{{ define "main"}}
+<div class="ui centered relaxed grid dream-grid">
+  <div class="sixteen wide mobile sixteen wide tablet four wide computer column">
+    {{ partial "header.html" . }}
+  </div>
+  <div class="sixteen wide mobile sixteen wide tablet twelve wide computer column">
+    <div class="ui segment dream-categories-section">
+      <h1 class="ui large header">
+        {{ i18n "archives" }}
+      </h1>
+
+      {{ $data := .Data }}
+      {{ range .Data.Terms.Alphabetical.Reverse }}
+      {{ $termLink := printf "/%s/%s/" $data.Plural .Term | urlize }}
+      <!-- On ne prend pas les catégories links et news -->
+      {{ if and (ne .Term "links") (ne .Term "news") (ne .Term "help") }}
+      <h2 class="ui medium header">
+        {{ .Term }}
+      </h2>
+      <ul>
+        {{ range where .Pages "Section" "2019" }}
+        <li>
+          <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </li>
+        {{ end }}
+      </ul>
+      {{ end }}
+      {{ end }}
+
+    </div>
+  </div>
+</div>
+{{ end }}

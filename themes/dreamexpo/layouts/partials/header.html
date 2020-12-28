@@ -1,0 +1,92 @@
+<article class="dream-header">
+  <section class="ui top attached center aligned segment">
+    <div class="ui small circular image">
+      {{ if isset .Site.Data.config "avatar" }}
+      <a href="{{ .Site.BaseURL }}">
+        <img src="{{ .Site.Data.config.avatar | relURL }}">
+      </a>
+      {{ end }}
+    </div>
+
+    <h1 class="ui medium header">
+      {{- .Site.Data.config.title -}}
+      <div class="sub header" style="margin-top: 0.5rem;">{{- .Site.Data.config.subtitle -}}</div>
+    </h1>
+
+    <!-- <div class="ui horizontal list">
+      <a class="item" href="{{ "tags" | relLangURL }}">
+        <div class="ui label">
+          <i class="tags icon"></i>{{ T "allTags" }}
+        </div>
+      </a> -->
+      <!-- Les Archives sont catégorisées par année dans la rubrique categories -->
+      <!-- <a class="item" href="{{ "categories" | relLangURL }}">
+        <div class="ui label">
+          <i class="archive icon"></i>{{ T "archives" }}
+        </div>
+      </a> -->
+    <!-- </div> -->
+  </section>
+
+  {{ if .Site.Taxonomies.tags }}
+  <section class="ui attached center aligned segment dream-tags">  
+    {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+      <a class="ui label" href="{{ "tags/" | relLangURL }}{{ $name | urlize }}" title="{{ $name }}">#{{ $name }}</a>
+    {{ end }}
+  </section>
+  {{ end }}
+
+  {{ if .Site.Taxonomies.categories }}
+  <section class="ui attached segment dream-categories">
+    {{ $categories := .Site.Taxonomies.categories }}
+    {{ range $name, $taxonomy := $categories }}
+    {{ if (eq $name "news") }}
+    <div class="content">
+      <div class="ui ribbon label">{{ T "news"}}</div>
+      <div class="ui list">
+      {{ range $taxonomy.Pages }}
+        <div class="item">
+          <div class="content">
+            <a href="{{ .RelPermalink }}" class="item">{{ .LinkTitle }}</a>
+          </div>
+        </div>
+      {{ end }}
+      </div><!-- /list-->
+    </div><!-- /content-->
+    {{ end }}
+    {{ end }}
+  </section>
+  {{ end }}
+
+  {{ if .Site.Taxonomies.categories }}
+  <section class="ui bottom attached segment dream-categories" style="background-color: #e8e8e8;">
+    {{ $categories := .Site.Taxonomies.categories }}
+    {{ range $name, $taxonomy := $categories }}
+    {{ if (eq $name "links") }}
+    <div class="content">
+      <div class="ui list">
+      {{ range $taxonomy.Pages }}
+        <div class="item">
+          <div class="content">
+            <a href="{{ .RelPermalink }}" class="item" style="color: rgba(0,0,0,.6) !important;">{{ .LinkTitle }}</a>
+          </div>
+        </div>
+      {{ end }}
+      </div><!-- /list-->
+    </div><!-- /content-->
+    {{ end }}
+    {{ end }}
+  </section>
+  {{ end }}
+
+  <!-- <section class="ui grey inverted bottom attached center aligned segment">
+    {{ if .Site.Params.siteStartYear }}
+      <p>© {{ if eq now.Year .Site.Params.siteStartYear }}{{ now.Year }}{{ else }}{{ .Site.Params.siteStartYear }} - {{ now.Year }}{{ end }} {{ .Site.Data.config.title }}</p>
+    {{ else }}
+      <p>© {{ now.Year }} {{ .Site.Data.config.title }}</p>
+    {{ end }}
+    {{ if .Site.Params.headerBottomText }}
+      <p>{{ .Site.Params.headerBottomText | safeHTML }}</p>
+    {{ end }}
+  </section> -->
+</article>

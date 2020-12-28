@@ -1,0 +1,11 @@
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - uses: jakejarvis/hugo-build-action@master
+    - uses: peaceiris/actions-gh-pages@v3
+      with:
+        personal_token: ${{ secrets.FOIRE_EXPO }}
+        publish_dir: ./public

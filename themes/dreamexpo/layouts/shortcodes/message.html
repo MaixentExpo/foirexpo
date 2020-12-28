@@ -1,0 +1,7 @@
+<!-- 
+    Affichage d'un message
+-->
+{{$type := .Get 0 | default ""}}
+<div class="ui {{$type}} message">
+{{ .Inner }}
+</div>

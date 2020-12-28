@@ -1,0 +1,43 @@
+<article class="dream-header">
+  <section class="ui top attached center aligned segment">
+    <div class="ui small circular image">
+      {{ if isset .Site.Data.config "avatar" }}
+      <a href="{{ .Site.BaseURL }}">
+        <img src="{{ .Site.Data.config.avatar | relURL }}">
+      </a>
+      {{ end }}
+    </div>
+    <h1 class="ui medium header">
+      {{- .Site.Data.config.title -}}
+    </h1>
+  </section>
+
+  <section class="ui bottom attached segment dream-categories">
+    <div class="content">
+      <a class="ui ribbon label" href="/site/help"><i class="home icon"></i>{{ .Site.Params.titlehelp }}</a>
+      <div class="ui list">
+      {{$pathCurrentPage := .File.Path}}
+      {{ range .Site.Pages }}
+        {{ if eq .Type "help" }}
+        {{ if eq $pathCurrentPage .File.Path }}
+        <div class="item" href="{{ .RelPermalink }}">
+          <i class="right triangle icon"></i>
+          <div class="content">
+              {{ .LinkTitle }}
+          </div>
+        </div>
+        {{else}}
+        <a class="item" href="{{ .RelPermalink }}">
+          <i class="right triangle icon"></i>
+          <div class="content">
+              {{ .LinkTitle }}
+          </div>
+        </a>
+        {{end}}
+        {{end}}
+      {{ end }}
+      </div><!-- /list-->
+    </div><!-- /content-->
+  </section>
+
+</article>

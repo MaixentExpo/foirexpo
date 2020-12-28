@@ -1,0 +1,7 @@
+---
+#
+# Mise en production du site de développement
+# en utilisant l'action "pushProd"
+#
+action : "pushProd"
+---
