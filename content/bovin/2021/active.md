@@ -1,5 +1,5 @@
 ---
-title: Page en ligne qui expirera le 1er mai 2021
+title: Page en ligne
 # Brouillon true ou false pour mettre la page en brouillon (elle ne sera pas accessible sur le site)
 draft: false 
 # date de création
@@ -17,7 +17,7 @@ tags:
 # catégories pour mettre la page dans un emplacement particulier
 categories: 
 - news 	# le lien de la page sera placé dans les actualités du Sommaire général
-- links    # le lien de la page sera placé dans les liens invariants du Sommaire général
+#- links # le lien de la page sera placé dans les liens invariants du Sommaire général
 
 # image de couverture dans le sommaire de la page
 cover: /site/cover.png

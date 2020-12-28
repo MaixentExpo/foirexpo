@@ -1,6 +1,6 @@
 ---
 #
-# Personnalisation du Site 
+# Personnalisation du Site
 # !!!Ne pas changer le nom et déplacer ce fichier
 #
 title : "FOIREXPO ST-MAIXENT"
@@ -13,5 +13,5 @@ avatar: "/site/avatar.jpg"
 favicon: "/site/favicon.svg"
 
 # l'image d'arrière plan du site
-backgroundImage: "https://images.pexels.com/photos/4593407/pexels-photo-4593407.jpeg?cs=srgb&dl=pexels-robyn-w-4593407.jpg&fm=jpg"
+backgroundImage: "/site/2020/fond-ecran.jpg"
 ---

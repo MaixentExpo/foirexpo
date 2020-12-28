@@ -16,7 +16,7 @@ tags:
 
 # catégories pour mettre la page dans un emplacement particulier
 categories: 
-#- news 	# le lien de la page sera placé dans les actualités du Sommaire général
+- news 	# le lien de la page sera placé dans les actualités du Sommaire général
 #- links    # le lien de la page sera placé dans les liens invariants du Sommaire général
 
 # image de couverture dans le sommaire de la page
