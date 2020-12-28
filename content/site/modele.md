@@ -11,8 +11,8 @@ expiryDate: 2021-05-01
 
 # étiquettes pour classer la page et ainsi la retrouver sur le site
 tags: 
-- exposant
-- vin
+- info
+- presse
 
 # catégories pour mettre la page dans un emplacement particulier
 categories: 
