@@ -52,7 +52,11 @@
     {{ end }}
 
     {{ if .Site.Data.config.backgroundImage }}
-    background-image: url({{ .Site.Data.config.backgroundImage }});
+      {{ if eq (substr .Site.Data.config.backgroundImage 0 4) "http" }}
+      background-image: url({{ .Site.Data.config.backgroundImage }});
+      {{else}}
+      background-image: url(.{{ .Site.Data.config.backgroundImage }});
+      {{end}}
     {{ end }}
   }
   {{ end }}
