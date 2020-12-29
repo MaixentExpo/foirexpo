@@ -1,4 +1,6 @@
-# GIT PUSH
+# PUSH PRODUCTION
+
+hugo -d /volshare/foirep --cleanDestinationDir
 
 # git init
 # git add .
