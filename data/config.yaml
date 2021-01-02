@@ -13,5 +13,6 @@ avatar: "/site/2020/avatar.jpg"
 favicon: "/site/favicon.svg"
 
 # l'image d'arrière plan du site
-backgroundImage: "/site/2020/fond-ecran.jpg"
+#backgroundImage: "/site/2020/fond-ecran.jpg"
+backgroundImage: "/img/hugo-background.jpg"
 ---
