@@ -14,5 +14,5 @@ favicon: "/site/favicon.svg"
 
 # l'image d'arrière plan du site
 #backgroundImage: "/site/2020/fond-ecran.jpg"
-backgroundImage: "/img/hugo-background.jpg"
+backgroundImage: "https://images.pexels.com/photos/1030322/pexels-photo-1030322.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
 ---
