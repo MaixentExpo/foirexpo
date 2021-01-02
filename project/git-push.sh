@@ -6,9 +6,13 @@ hugo -d /volshare/foirep --cleanDestinationDir
 # https://github.com/MaixentExpo/foirexpo
 # Déclarer SSH and GPG keys sur Personnal settings de pbillerot
 # Inviter pbillerot en tant que mamager du projet
-# En local
-# sudo git clone https://github.com/MaixentExpo/foirexpo.git
+# debian
+# /volshare/src
+# git clone https://github.com/MaixentExpo/foirexpo.git
 # git remote set-url origin git@github.com:MaixentExpo/foirexpo.git
+# beedule
+# /volshare
+# git clone /volshare/src/foirexpo.git
 
 git status
 git add .
