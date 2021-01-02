@@ -2,7 +2,7 @@
 
 {{ if eq .Type "posts" }}
 <!-- Page Author & Description -->
-<meta name="author" content="{{ if isset .Params "author" }}{{ .Params.author }}{{ else }}{{ .Site.Params.author }}{{ end }}" />
+<meta name="author" content="{{ if isset .Params `author` }}{{ .Params.author }}{{ else }}{{ .Site.Params.author }}{{ end }}" />
 <meta name="description" content="{{ .Summary | plainify }}" />
 {{ else }}
 <!-- Site Author & Description -->
