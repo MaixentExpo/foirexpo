@@ -1,0 +1,33 @@
+
+title: "TITRE"
+
+baseURL: "/"
+languageCode: "fr-FR"
+defaultContentLanguage: "fr"
+
+theme: "dreamexpo"
+RelativeURLs: true
+CanonifyURLs: true
+
+params:
+  background: "grey"
+  linkColor: "seagreen"
+  rss: true
+
+  email: "philippe.billerot@gmail.com"
+  github: "MaixentExpo"
+  siteStartYear: 2020
+
+  enableGitInfo: true
+
+  # Url du site pour éditer les pages directement
+  # Utilisation href="{{printf .Site.Params.HugoServerEditUrl .Page.path}}"
+  HugoServerEditUrl: "https://billerot.eu/bee/hugo/edit/asf?path=%s"
+  
+  titlehelp: "Aide pour l'Administrateur"
+  enableRobotsTXT: true
+
+markup:
+  markup.goldmark:
+    markup.goldmark.renderer:
+      unsafe: true
