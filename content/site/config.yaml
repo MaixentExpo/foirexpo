@@ -11,6 +11,7 @@ avatar: "/site/2020/avatar.jpg"
 
 # l'icône dans l'onglet du navigateur
 favicon: "/site/favicon.svg"
+faviconDev: "/site/favicon-dev.png"
 
 # l'image d'arrière plan du site
 #backgroundImage: "/site/2020/fond-ecran.jpg"
