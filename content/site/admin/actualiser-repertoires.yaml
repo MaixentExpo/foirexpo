@@ -1,7 +1,0 @@
----
-#
-# Actualisation de l'arboresence des répertoires et fichiers
-# en utilisant l'action "refreshHugo"
-#
-action : "refreshHugo"
----

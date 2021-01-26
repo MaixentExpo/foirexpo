@@ -22,7 +22,7 @@ Le Code de la Propriété Intellectuelle et, plus généralement, les traités e
 
 Les sites reliés directement ou indirectement à ce site ne sont pas sous le contrôle de ce dernier. En conséquence, le propriétaire de ce Site WEB n'assume aucune responsabilité quant aux informations publiées sur ces sites. Les liens avec des sites tiers ne sont fournis qu'à titre de commodité et n'impliquent aucune caution quant à leur contenu.
 
-**CE SITE N'UTILISE PAS DE COOKIES. (Étonnant non ?)**
+**CE SITE N'UTILISE PAS DE COOKIES (Étonnant non ?)**
 {{< /colonne >}}
 
 {{< colonnes >}}

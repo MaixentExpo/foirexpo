@@ -21,10 +21,9 @@ params:
   enableGitInfo: true
 
   # Url du site pour éditer les pages directement
-  # Utilisation href="{{printf .Site.Params.HugoServerEditUrl .Page.path}}"
-  HugoServerEditUrl: "https://billerot.eu/bee/hugo/edit/asf?path=%s"
+  # Utilisation href="{{printf .Site.Params.HugoServerAdmin .Page.path}}"
+  HugoServerAdmin: "http://localhost:8080/document/%s"
   
-  titlehelp: "Aide pour l'Administrateur"
   enableRobotsTXT: true
 
 markup:

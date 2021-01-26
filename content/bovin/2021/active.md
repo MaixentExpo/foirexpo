@@ -1,5 +1,5 @@
 ---
-title: Page en ligne
+title: Page en ligne 2
 # Brouillon true ou false pour mettre la page en brouillon (elle ne sera pas accessible sur le site)
 draft: false 
 # date de création
