@@ -18,4 +18,4 @@ git status
 git add .
 git commit -m "ok boumer"
 git pull
-git push origin master
+git push
