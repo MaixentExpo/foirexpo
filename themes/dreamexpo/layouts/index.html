@@ -1,6 +1,7 @@
 {{ define "main"}}
 <div class="ui relaxed grid dream-grid">
-    <div class="sixteen wide mobile eight wide tablet eight wide computer four wide large screen four wide widescreen column dream-column">
+    <div
+        class="sixteen wide mobile eight wide tablet eight wide computer four wide large screen four wide widescreen column dream-column">
         {{ partial "header.html" . }}
     </div>
 
@@ -8,13 +9,16 @@
     {{ $paginator := .Paginate .Site.RegularPages 30}}
     {{ range $paginator.Pages }}
     {{ if not (in .Params.categories "links") }}
-    <div class="sixteen wide mobile eight wide tablet eight wide computer four wide large screen four wide widescreen column dream-column">
+    {{ if (ne .Type "help") }}
+    <div
+        class="sixteen wide mobile eight wide tablet eight wide computer four wide large screen four wide widescreen column dream-column">
         {{ .Render "summary" }}
     </div>
     {{ end }}
     {{ end }}
-
-    <div class="sixteen wide mobile eight wide tablet eight wide computer four wide large screen four wide widescreen column dream-column">
+    {{ end }}
+    <div
+        class="sixteen wide mobile eight wide tablet eight wide computer four wide large screen four wide widescreen column dream-column">
         {{ partial "paginator.html" (dict "paginator" $paginator "Site" .Site) }}
     </div>
 </div>

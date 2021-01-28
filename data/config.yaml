@@ -7,14 +7,12 @@ title : "FOIREXPO ST-MAIXENT"
 subtitle: "du 9 au 12 avril 2021"
 
 # l'image arrondie dans la carte du sommaire
-avatar: "/site/2020/avatar.jpg"
+avatar: "/site/2021/avatar.jpg"
 
 # l'icône dans l'onglet du navigateur
 favicon: "/site/favicon.svg"
 faviconDev: "/site/favicon-dev.png"
 
 # l'image d'arrière plan du site
-#backgroundImage: "/site/2020/fond-ecran.jpg"
-#backgroundImage: "https://images.pexels.com/photos/1030322/pexels-photo-1030322.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-backgroundImage: "https://images.pexels.com/photos/3601450/pexels-photo-3601450.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+backgroundImage: "/site/2021/fondecran.jpg"
 ---

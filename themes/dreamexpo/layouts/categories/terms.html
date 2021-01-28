@@ -16,8 +16,8 @@
             {{ $data := .Data }}
             {{ range .Data.Terms.Alphabetical.Reverse }}
             {{ $termLink := printf "/%s/%s/" $data.Plural .Term | urlize }}
-            <!-- On ne prend pas les catégories links et news -->
-            {{ if and (ne .Term "links") (ne .Term "news") }}
+            <!-- On ne prend pas les catégories links et news et help -->
+            {{ if and (ne .Term "links") (ne .Term "news") (ne .Term "help") }}
             <h2 class="ui medium header">
                 {{ .Term }}
             </h2>
