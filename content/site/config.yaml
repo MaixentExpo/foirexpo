@@ -14,5 +14,5 @@ favicon: "/site/favicon.svg"
 faviconDev: "/site/favicon-dev.png"
 
 # l'image d'arrière plan du site
-backgroundImage: "/site/2021/fondecran.jpg"
+backgroundImage: "./site/2021/fondecran.jpg"
 ---

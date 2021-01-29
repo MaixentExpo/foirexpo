@@ -26,7 +26,13 @@ params:
   
   enableRobotsTXT: true
 
+  advanced:
+    customCSS:
+    - "css/custom.css"
+    customJS:
+    
 markup:
   markup.goldmark:
     markup.goldmark.renderer:
       unsafe: true
+
