@@ -31,7 +31,7 @@
   {{ if .Site.Taxonomies.tags }}
   <section class="ui attached center aligned segment dream-tags">  
     {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
-      <a class="ui label" href="{{ "tags/" | relLangURL }}{{ $name | urlize }}" title="{{ $name }}">#{{ $name }}</a>
+      <a class="ui label" href="{{ `tags/` | relLangURL }}{{ $name | urlize }}/" title="{{ $name }}">#{{ $name }}</a>
     {{ end }}
   </section>
   {{ end }}

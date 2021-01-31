@@ -13,7 +13,6 @@ avatar: "/site/2021/avatar.jpg"
 favicon: "/site/favicon.svg"
 faviconDev: "/site/favicon-dev.png"
 
-# l'image d'arrière plan du site
+# l'image d'arrière plan du site v1
 backgroundImage: "/site/2021/fondecran.jpg"
-#backgroundImage: "/img/hugo-background.jpg"
 ---
