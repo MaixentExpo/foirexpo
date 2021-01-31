@@ -1,4 +1,4 @@
-{{ if eq hugo.Environment "DEV" }}
+{{ if eq hugo.Environment "development" }}
 <link href="{{ .Site.Data.config.faviconDev }}" rel="shortcut icon" type="image/x-icon" />
 {{else}}
 <link href="{{ .Site.Data.config.favicon }}" rel="shortcut icon" type="image/x-icon" />
