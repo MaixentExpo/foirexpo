@@ -53,7 +53,8 @@
     {{ end }}
 
     {{ if .Site.Data.config.backgroundImage }}
-      background-image: url("{{ .Site.Data.config.backgroundImage}}");
+      background-attachment: fixed;
+      background-image: url('{{ .Site.Data.config.backgroundImage}}');
     {{ end }}
   }
   {{ end }}
