@@ -53,8 +53,11 @@
     {{ end }}
 
     {{ if .Site.Data.config.backgroundImage }}
-      background-attachment: fixed;
-      background-image: url('{{ .Site.Data.config.backgroundImage}}');
+    {{if eq hugo.Environment "development" }}
+    background-image: url('{{ .Site.Data.config.backgroundImage}}');
+    {{else}}
+    background-image: url('/{{hugo.Environment}}{{ .Site.Data.config.backgroundImage}}');
+    {{end}}
     {{ end }}
   }
   {{ end }}
