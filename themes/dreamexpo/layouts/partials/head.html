@@ -1,7 +1,7 @@
-{{ if eq hugo.Environment "development" }}
-<link href="{{ .Site.Data.config.faviconDev }}" rel="shortcut icon" type="image/x-icon" />
-{{else}}
+{{ if eq hugo.Environment "production" }}
 <link href="{{ .Site.Data.config.favicon }}" rel="shortcut icon" type="image/x-icon" />
+{{else}}
+<link href="{{ .Site.Data.config.faviconDev }}" rel="shortcut icon" type="image/x-icon" />
 {{end}}
 {{ if eq .Type "posts" }}
 <!-- Page Author & Description -->
@@ -53,7 +53,7 @@
     {{ end }}
 
     {{ if .Site.Data.config.backgroundImage }}
-    {{if eq hugo.Environment "development" }}
+    {{if eq hugo.Environment "production" "development" }}
     background-image: url('{{ .Site.Data.config.backgroundImage}}');
     {{else}}
     background-image: url('/{{hugo.Environment}}{{ .Site.Data.config.backgroundImage}}');
