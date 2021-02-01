@@ -11,8 +11,8 @@ avatar: "/site/2021/avatar.jpg"
 
 # l'icône dans l'onglet du navigateur
 favicon: "/site/favicon.svg"
-faviconDev: "/site/hugo-h.png"
+faviconDev: "/site/favicon-dev.png"
 
-# l'image d'arrière plan du site v1
+# l'image d'arrière plan du site v3
 backgroundImage: "/site/2021/fondecran.jpg"
 ---
