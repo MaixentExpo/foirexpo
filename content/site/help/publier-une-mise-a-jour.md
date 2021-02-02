@@ -1,14 +1,14 @@
 ---
 title: Publier une mise à jour
-categories: 
+categories:
 - help
-
-# image de couverture dans le sommaire de la page
-cover: /site/cover.png
+cover: /site/help/cover.jpg
 ---
 <!--more-->
 ```shell
 cd /volshare/foirexpo
 hugo
+git add .
+git commit -m "commentaire sur la mise à jour"
 git push
 ```

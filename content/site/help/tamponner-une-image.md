@@ -1,6 +1,8 @@
 ---
 title: Tamponner une image
-type: site
+categories:
+- help
+cover: /site/help/cover.jpg
 ---
 <!--more-->
 
