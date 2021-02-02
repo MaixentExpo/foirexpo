@@ -4,7 +4,7 @@ date: 2019-10-19
 expiryDate: 2021-02-10
 tags: 
   - "Tombola"
-draft: false
+draft: true
 cover: /tombola/2019/cover.jpg
 ---
 

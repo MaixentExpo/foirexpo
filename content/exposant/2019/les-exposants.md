@@ -6,7 +6,7 @@ cover: /exposant/cover.png
 categories:
 tags:
   - "exposant"
-draft: false
+draft: true
 ---
 <!--more-->
 {{< image image="/exposant/2019/2019-exposants-1.jpg" >}}

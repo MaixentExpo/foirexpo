@@ -1,12 +1,13 @@
 ---
 title: La foire 2021 se déroulera du 9 au 12 avril 2021 à l'abordage des Caraïbes
 date: 2020-04-04
+dateExpired: 2020-06-01
 cover: /foire/affiche.jpg
 categories:
 - news
 tags:
 - "info"
-draft: false
+draft: true
 ---
 <!--more-->
 

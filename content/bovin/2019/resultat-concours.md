@@ -5,7 +5,7 @@ expiryDate: 2021-03-10
 categories:
 tags:
 - bovin
-draft: false
+draft: true
 cover: /bovin/cover.png
 ---
 

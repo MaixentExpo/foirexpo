@@ -22,7 +22,7 @@ params:
 
   # Url du site pour éditer les pages directement
   # Utilisation href="{{printf .Site.Params.HugoServerAdmin .Page.path}}"
-  HugoServerAdmin: "http://localhost:8080/document/%s"
+  HugoServerAdmin: "http://localhost:8080/victor/document/%s"
   
   enableRobotsTXT: true
 

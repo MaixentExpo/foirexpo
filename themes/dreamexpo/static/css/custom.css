@@ -1,1 +1,5 @@
 /* Personnalisation */
+
+.bee-edit {
+    display: none !important;
+}

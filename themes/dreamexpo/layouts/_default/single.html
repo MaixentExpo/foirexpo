@@ -49,9 +49,8 @@
                 {{if .Draft }}
                 <i class="firstdraft red icon" title="brouillon"></i>
                 {{end}}
-                {{ if .Site.IsServer }}
                 {{if or .PublishDate .ExpiryDate }}
-                <div class="ui yellow image label">
+                <div class="ui yellow image label bee-edit">
                     <i class="clock outline icon"></i>
                     {{if .PublishDate}}<span title="date publication">{{.PublishDate.Format "2006-01-02"}}</span>{{end}}
                     {{if .ExpiryDate}}
@@ -59,15 +58,14 @@
                     {{end}}
                 </div>
                 {{end}}
-                {{ if .Site.Params.HugoServerAdmin }}
-                <div class="ui green label" style="float: right;" onClick="window.open('{{printf .Site.Params.HugoServerAdmin .Page.Path}}', 'hugo-edit', 'left=' + (screen.availWidth - 1200 - 18) + ',top=5,width=1200,height=1014,scrolling=yes,scrollbars=yes,resizeable=yes');" title="Editer la page...">
+                <a class="ui link green float right label bee-edit bee-edit-open" 
+                data-isserver="{{.Site.IsServer}}" data-path="{{.File.Path}}"
+                 title="Editer la page...">
                     <i class="edit icon"></i>
-                </div>
-                {{end}}
-                {{end}}
-                <div class="ui label" style="float: right; cursor: pointer;" onclick="savePostAsImg()">
+                </a>
+                <a class="ui label" style="float: right; cursor: pointer;" onclick="savePostAsImg()">
                     <i class="save icon"></i>{{ i18n "saveAsImage" }}
-                </div>
+                </a>
         </footer>
 
         {{ if .Site.Copyright }}

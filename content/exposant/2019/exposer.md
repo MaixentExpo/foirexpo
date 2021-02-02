@@ -1,8 +1,8 @@
 ---
 title: Vous voulez exposer
-date: 2020-10-21
-publishDate: 2020-11-10
-#expiryDate: 2020-11-19
+date: 2020-02-01
+publishDate: 2020-03-01
+expiryDate: 2020-11-19
 cover: /exposant/cover.png
 tags:
 - exposant

@@ -1,7 +1,7 @@
 ---
 title: Inscription au concours Bovins 2020
 date: 2020-10-20
-publishDate: 2020-11-15
+publishDate: 2021-03-01
 expiryDate: 2021-05-18
 tags:
 - bovin

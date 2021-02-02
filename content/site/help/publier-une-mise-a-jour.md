@@ -1,5 +1,6 @@
 ---
 title: Publier une mise à jour
+date: 2021-02-01
 categories:
 - help
 cover: /site/help/cover.jpg

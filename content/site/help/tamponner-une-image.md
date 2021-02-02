@@ -1,5 +1,6 @@
 ---
 title: Tamponner une image
+date: 2021-02-01
 categories:
 - help
 cover: /site/help/cover.jpg
