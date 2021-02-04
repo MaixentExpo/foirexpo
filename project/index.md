@@ -24,11 +24,12 @@ theme/dreamexpo  :smile:
 - /i18n
   - fr.toml (mot in french)
 - /layouts
-  - index.html (à vérifier)
+  - index.html définit main et js
   - /categories
     - terms.html (liste des catégories)
   - /_default
     - baseof.html
+    - list.html la page principale avec _header et summary
     - single.html (template article)
     - summary.html (template carte article)
   - /partials

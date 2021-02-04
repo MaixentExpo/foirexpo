@@ -1,4 +1,5 @@
 <!-- 
     Affichage de diapositives
 -->
-<div class="ui centered relaxed grid dream-grid">{{.Inner}}</div>
+{{$size := .Get "taille" | default "medium" }}
+<div id="bee-diaporama" data-size="{{$size}}" class="ui centered cards">{{.Inner}}</div>

@@ -1,0 +1,8 @@
+<!-- 
+    Présentation d'un texte
+    param 0: couleur
+    param 1: alignement
+-->
+{{$couleur := .Get 0 | default "black"}}
+{{$alignement := .Get 1 | default ""}}
+<span class="ui {{ $couleur }} {{ $alignement }} text">{{.Inner}}</span>

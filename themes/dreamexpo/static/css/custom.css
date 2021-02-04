@@ -1,5 +1,29 @@
 /* Personnalisation */
 
-.bee-edit {
+.bee-admin, .bee-hidden {
     display: none !important;
+}
+.bee-edit-open, .bee-open, .bee-modal-file, .bee-window-open {
+    cursor: pointer;
+}
+.ui.segment, .ui.segments .segment {
+    font-size: inherit;
+}
+
+#bee-diaporama img {
+    object-fit: contain;
+}
+
+.compact.message {
+    margin: 0.5em;
+    padding: 0.5em 1em;
+}
+
+/* markdown */
+.markdown-body {
+    font-family: inherit;
+}
+.markdown-body h4 {
+    color: red;
+    text-align: center;
 }

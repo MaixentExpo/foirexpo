@@ -1,7 +1,7 @@
 {{ define "main"}}
 <div class="ui relaxed grid dream-grid">
     <div
-        class="sixteen wide mobile eight wide tablet eight wide computer four wide large screen four wide widescreen column dream-column">
+        class="sixteen wide mobile eight wide tablet five wide computer four wide large screen four wide widescreen column dream-column">
         {{ partial "header.html" . }}
     </div>
 
@@ -11,7 +11,7 @@
     {{ if not (in .Params.categories "links") }}
     {{ if not (in .Params.categories "help") }}
     <div
-        class="sixteen wide mobile eight wide tablet eight wide computer four wide large screen four wide widescreen column dream-column">
+        class="sixteen wide mobile eight wide tablet five wide computer four wide large screen four wide widescreen column dream-column">
         {{ .Render "summary" }}
     </div>
     {{ end }}

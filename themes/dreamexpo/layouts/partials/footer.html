@@ -1,3 +1,19 @@
+<!-- Affichage d'une image en popup-->
+<div id="bee-modal-file" class="ui large modal">
+    <div class="actions">
+        <div class="ui approve button bee-hidden"><i class="file pdf red icon"></i>Télécharger</div>
+        <div class="ui cancel button">Fermer</div>
+    </div>
+    <div class="image content">
+        <img class="image center aligned" style="max-height: 100%;max-width: 100%;" src="">
+    </div>
+</div>
+<script>
+    // Variables globales traitées dans bee-script.js
+    var $IsServer = '{{.Site.IsServer}}';
+    var $FilePath = '{{ with .File }}{{ .Path }}{{ end }}';
+</script>
+<!-- end modal image -->
 <script src="{{ "/js/jquery.min.js" | relURL }}"></script>
 <script src="{{ "/js/semantic.min.js" | relURL }}"></script>
 <script src="{{ "/js/jquery.overlayScrollbars.min.js" | relURL }}"></script>

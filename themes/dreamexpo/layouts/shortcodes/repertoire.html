@@ -1,0 +1,34 @@
+<!-- 
+    Affichage des images d'un répertoire
+    dir   : répertoire des images
+    class : class css semantic à appliquer
+-->
+{{$dir := .Get 0 | default "/"}}
+<div class="ui segment">
+    {{ range (readDir (printf "/content%s" $dir ) ) }}
+    {{ $path := (printf "%s/%s" $dir .Name )}}
+    {{ $ext := (path.Ext .Name) }}
+    {{ if eq $ext ".md" }}
+    <div class="ui compact message bee-open" data-path="{{ replace $path `.md` `` }}">
+        <i class="green file alternate outline large icon"></i>{{ path.Base .Name }}
+    </div>
+    {{ else if or (eq $ext ".jpg") (eq $ext ".jpeg") (eq $ext ".png") (eq $ext ".svg") }}
+    <div class="ui compact message bee-modal-file">
+        <img class="ui middle aligned mini image" src="{{ $path }}">
+        <span>{{ path.Base .Name }}</span>
+    </div>
+    {{ else if eq $ext ".yaml" }}
+    <div class="ui compact message bee-open" data-path="{{ replace $path `.yaml` `` }}">
+        <i class="file code outline brown large icon"></i>{{ path.Base .Name }}
+    </div>
+    {{ else if eq $ext ".pdf" }}
+    <div class="ui compact message bee-window-open" data-path="{{ $path }}">
+        <i class="file pdf outline red large icon"></i>{{ path.Base .Name }}
+    </div>
+    {{ else }}
+    <div class="ui compact message bee-open" data-path="{{ replace $path `.yaml` `` }}">
+        <i class="file outline large icon"></i>{{ path.Base .Name }}
+    </div>
+    {{ end }}
+    {{ end }}
+</div>

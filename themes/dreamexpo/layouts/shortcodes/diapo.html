@@ -7,24 +7,29 @@
     lien: url vers le document
 -->
 {{$src := .Get "image"}}
-{{$size := .Get "taille" | default "petite" }}
-{{$pos := .Get "position" | default "centered"}}
+{{$size := .Get "taille" | default "medium" }}
 {{$legend := .Get "titre"}}
 {{$url := .Get "lien"}}
-{{if eq $size "mini"}}{{$size = "tiny"}}{{else if eq $size "petite"}}{{$size = "small"}}{{else if eq $size "moyenne"}}{{$size = "medium"}}{{else if eq $size "grande"}}{{$size = "large"}}{{else}}{{$size = "big"}}{{end}}
-{{if eq $pos "gauche"}}{{$pos = "left floated"}}{{else if eq $pos "droite"}}{{$pos = "right floated"}}{{end}}
-{{ with .Parent }}{{$size := .Get "taille" | default "petite"}}{{end}}
-<div class="ui compact center aligned segment" style="margin: 5px;">
-    {{if $url}}
-    <a class="image" href="{{ $url }}" target="_blank">
-        <img class="ui {{$size}} image" src="{{ $src }}"></img>
-    </a>
-    {{else}}
+{{if $url}}
+<a class="card raised bee-modal-file" href="" data-path="{{ $url }}">
     <div class="image">
-        <img class="ui {{$size}} image" src="{{ $src }}"></img>
+        <img src="{{ $src }}">
+    </div>
+    {{if $legend}}
+    <div class="content">
+        <div class="center aligned header">{{ $legend }}</div>
     </div>
     {{end}}
+</a>
+{{else}}
+<div class="card raised">
+    <div class="image">
+        <img src="{{ $src }}">
+    </div>
     {{if $legend}}
-    <h3 class="ui header">{{ $legend }}</h3>
+    <div class="content">
+        <div class="header">{{ $legend }}</div>
+    </div>
     {{end}}
 </div>
+{{end}}

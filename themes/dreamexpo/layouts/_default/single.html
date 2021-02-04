@@ -50,7 +50,7 @@
                 <i class="firstdraft red icon" title="brouillon"></i>
                 {{end}}
                 {{if or .PublishDate .ExpiryDate }}
-                <div class="ui yellow image label bee-edit">
+                <div class="ui yellow image label bee-admin">
                     <i class="clock outline icon"></i>
                     {{if .PublishDate}}<span title="date publication">{{.PublishDate.Format "2006-01-02"}}</span>{{end}}
                     {{if .ExpiryDate}}
@@ -58,13 +58,12 @@
                     {{end}}
                 </div>
                 {{end}}
-                <a class="ui link green float right label bee-edit bee-edit-open" 
-                data-isserver="{{.Site.IsServer}}" data-path="{{.File.Path}}"
+                <a class="ui link green float right icon bee-admin bee-edit-open" 
                  title="Editer la page...">
                     <i class="edit icon"></i>
                 </a>
-                <a class="ui label" style="float: right; cursor: pointer;" onclick="savePostAsImg()">
-                    <i class="save icon"></i>{{ i18n "saveAsImage" }}
+                <a class="ui icon" style="float: right; cursor: pointer;" onclick="savePostAsImg()" title="{{ i18n "saveAsImage" }}">
+                    <i class="save large icon"></i>
                 </a>
         </footer>
 
