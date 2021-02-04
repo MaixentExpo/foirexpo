@@ -11,7 +11,7 @@ $(document).ready(function () {
     });
 
     $(".bee-open").on('click', function (event) {
-        window.location=$(this).data('path');
+        window.location = $(this).data('path');
         event.preventDefault();
     });
     $(".bee-window-open").on('click', function (event) {
@@ -21,10 +21,10 @@ $(document).ready(function () {
 
     $(".bee-edit-open").on('click', function (event) {
         var $path = $(this).data('path');
-        if (! $path) {
+        if (!$path) {
             $path = $FilePath;
         }
-        if ($IsServer) {
+        if ($IsServer == 'true') {
             var $url = "http://localhost:8080/victor/document/" + $path;
             window.open($url, 'hugo-edit', 'left=' + (screen.availWidth - 1024 - 5) + ',top=5,width=1024,height=1014,scrolling=yes,scrollbars=yes,resizeable=yes');
         } else if (window.location.pathname.indexOf("hugo/")) {
@@ -39,7 +39,7 @@ $(document).ready(function () {
         var $url = $(this).data('path');
         var $src = $(this).find('img').attr('src');
         $('#bee-modal-file').find('img').attr('src', $src);
-        if ( $url ) {
+        if ($url) {
             $('#bee-modal-file').find('.approve').removeClass("bee-hidden");
         }
         $('#bee-modal-file')
