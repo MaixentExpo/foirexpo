@@ -11,7 +11,12 @@ $(document).ready(function () {
     });
 
     $(".bee-open").on('click', function (event) {
-        window.location = $(this).data('path');
+        if (window.location.pathname.indexOf("hugo/") > -1) {
+            window.location = "/hugo" + $(this).data('path') + "/";
+        } else {
+            window.location = $(this).data('path') + "/";
+        }
+
         event.preventDefault();
     });
     $(".bee-window-open").on('click', function (event) {
@@ -35,21 +40,21 @@ $(document).ready(function () {
     });
 
     // CLIC IMAGE POPUP
-    $('.bee-modal-file').on('click', function (event) {
-        var $url = $(this).data('path');
+    $('.bee-modal-image').on('click', function (event) {
+        var $pdf = $(this).data('pdf');
         var $src = $(this).find('img').attr('src');
-        $('#bee-modal-file').find('img').attr('src', $src);
-        if ($url) {
-            $('#bee-modal-file').find('.approve').removeClass("bee-hidden");
+        $('#bee-modal-image').find('img').attr('src', $src);
+        if ($pdf) {
+            $('#bee-modal-image').find('.approve').removeClass("bee-hidden");
         }
-        $('#bee-modal-file')
+        $('#bee-modal-image')
             .modal({
                 closable: true,
                 onHide: function () {
                     return true;
                 },
                 onApprove: function () {
-                    window.open($url, "_blank");
+                    window.open($pdf, "_blank");
                 }
             }).modal('show');
         event.preventDefault();
@@ -70,4 +75,18 @@ $(document).ready(function () {
             $(this).attr('style', 'height:' + $height + 'px;')
         });
     }
+
+    // RETURN TO TOP
+    $(window).scroll(function () {
+        if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+            $('#return-to-top').fadeIn(200);    // Fade in the arrow
+        } else {
+            $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+        }
+    });
+    $('#return-to-top').click(function () {      // When arrow is clicked
+        $('body,html').animate({
+            scrollTop: 0                       // Scroll to top of body
+        }, 500);
+    });
 });

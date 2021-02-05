@@ -7,7 +7,7 @@ draft: false
 ---
 
 <!--more-->
-{{< diaporama taille="mini" >}}
+{{< diaporama taille="small" >}}
 
 {{< diapo titre="1992" image="/foire/affiches/1992.jpg" >}}
 {{< diapo titre="1993" image="/foire/affiches/1993.jpg" >}}
@@ -37,6 +37,5 @@ draft: false
 {{< diapo titre="2017" image="/foire/affiches/2017.jpg"  lien="http://www.ipernity.com/doc/hartmann/album/974818">}}
 {{< diapo titre="2018" image="/foire/affiches/2018.jpg"  lien="http://www.ipernity.com/doc/hartmann/album/1055172">}}
 {{< diapo titre="2019" image="/foire/affiches/2019.jpg"  lien="http://www.ipernity.com/doc/hartmann/album/1229184">}}
-{{< diapo titre="2020" image="/foire/affiches/2020.jpg" >}}
 
 {{< /diapo >}}

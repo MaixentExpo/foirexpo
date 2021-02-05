@@ -1,5 +1,5 @@
 <!-- Affichage d'une image en popup-->
-<div id="bee-modal-file" class="ui large modal">
+<div id="bee-modal-image" class="ui large modal">
     <div class="actions">
         <div class="ui approve button bee-hidden"><i class="file pdf red icon"></i>Télécharger</div>
         <div class="ui cancel button">Fermer</div>
@@ -8,6 +8,7 @@
         <img class="image center aligned" style="max-height: 100%;max-width: 100%;" src="">
     </div>
 </div>
+<a href="javascript:" id="return-to-top"><i class="arrow up icon"></i></a>
 <script>
     // Variables globales traitées dans bee-script.js
     var $IsServer = '{{.Site.IsServer}}';

@@ -13,7 +13,7 @@
         <i class="green file alternate outline large icon"></i>{{ path.Base .Name }}
     </div>
     {{ else if or (eq $ext ".jpg") (eq $ext ".jpeg") (eq $ext ".png") (eq $ext ".svg") }}
-    <div class="ui compact message bee-modal-file">
+    <div class="ui compact message bee-modal-image">
         <img class="ui middle aligned mini image" src="{{ $path }}">
         <span>{{ path.Base .Name }}</span>
     </div>
