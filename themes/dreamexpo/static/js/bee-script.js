@@ -11,16 +11,19 @@ $(document).ready(function () {
     });
 
     $(".bee-open").on('click', function (event) {
+        var $path = $(this).data('path') + "/";
         if (window.location.pathname.indexOf("hugo/") > -1) {
-            window.location = "/hugo" + $(this).data('path') + "/";
-        } else {
-            window.location = $(this).data('path') + "/";
+            $path = "/hugo" + $(this).data('path') + "/";
         }
-
+        window.location = $path;
         event.preventDefault();
     });
     $(".bee-window-open").on('click', function (event) {
-        window.open($(this).data('path'), "_blank");
+        var $path = $(this).data('path') + "/";
+        if (window.location.pathname.indexOf("hugo/") > -1) {
+            $path = "/hugo" + $(this).data('path') + "/";
+        }
+        window.open($path, "_blank");
         event.preventDefault();
     });
 
@@ -89,4 +92,5 @@ $(document).ready(function () {
             scrollTop: 0                       // Scroll to top of body
         }, 500);
     });
+
 });

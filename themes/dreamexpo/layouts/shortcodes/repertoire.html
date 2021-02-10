@@ -13,7 +13,7 @@
         <i class="green file alternate outline large icon"></i>{{ path.Base .Name }}
     </div>
     {{ else if or (eq $ext ".jpg") (eq $ext ".jpeg") (eq $ext ".png") (eq $ext ".svg") }}
-    <div class="ui compact message bee-modal-image">
+    <div class="ui compact message bee-window-open">
         <img class="ui middle aligned mini image" src="{{ $path }}">
         <span>{{ path.Base .Name }}</span>
     </div>
@@ -25,8 +25,20 @@
     <div class="ui compact message bee-window-open" data-path="{{ $path }}">
         <i class="file pdf outline red large icon"></i>{{ path.Base .Name }}
     </div>
+    {{ else if or (eq $ext ".doc") (eq $ext ".dot") (eq $ext ".docx") (eq $ext ".dotx") (eq $ext ".odt")}}
+    <div class="ui compact message bee-window-open" data-path="{{ $path }}">
+        <i class="file word outline blue large icon"></i>{{ path.Base .Name }}
+    </div>
+    {{ else if or (eq $ext ".xls") (eq $ext ".xlsx") (eq $ext ".ods")}}
+    <div class="ui compact message bee-window-open" data-path="{{ $path }}">
+        <i class="file excel outline blue large icon"></i>{{ path.Base .Name }}
+    </div>
+    {{ else if or (eq $ext ".ppt") (eq $ext ".pps") (eq $ext ".pptx") (eq $ext ".ppsx") (eq $ext ".odt")}}
+    <div class="ui compact message bee-window-open" data-path="{{ $path }}">
+        <i class="file powerpoint outline blue large icon"></i>{{ path.Base .Name }}
+    </div>
     {{ else }}
-    <div class="ui compact message bee-open" data-path="{{ replace $path `.yaml` `` }}">
+    <div class="ui compact message bee-window-open" data-path="{{ $path }}">
         <i class="file outline large icon"></i>{{ path.Base .Name }}
     </div>
     {{ end }}
