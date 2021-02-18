@@ -1,5 +1,5 @@
 ---
-title: Espace Intranet
+title: Espace Intranet du Comité de la foire
 draft: false 
 date: 2021-02-09
 
@@ -11,7 +11,7 @@ cover: /intrafoire/banniere.jpg
 <!--more-->
 ![](banniere.jpg)
 
-## Modèles
+## Modèles de documents
 {{< repertoire "/intrafoire/modeles" >}}
 
 ## Inscriptions Restaurants
