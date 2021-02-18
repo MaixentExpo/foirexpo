@@ -17,6 +17,7 @@ params:
   email: "philippe.billerot@gmail.com"
   github: "MaixentExpo"
   siteStartYear: 2020
+  version: 21.2.18
 
   enableGitInfo: true
 
