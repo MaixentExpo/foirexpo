@@ -13,7 +13,7 @@
         <i class="green file alternate outline large icon"></i>{{ path.Base .Name }}
     </div>
     {{ else if or (eq $ext ".jpg") (eq $ext ".jpeg") (eq $ext ".png") (eq $ext ".svg") }}
-    <div class="ui compact message bee-window-open">
+    <div class="ui compact message bee-modal-image" data-path="{{ $path }}">
         <img class="ui middle aligned mini image" src="{{ $path }}">
         <span>{{ path.Base .Name }}</span>
     </div>
@@ -36,6 +36,10 @@
     {{ else if or (eq $ext ".ppt") (eq $ext ".pps") (eq $ext ".pptx") (eq $ext ".ppsx") (eq $ext ".odt")}}
     <div class="ui compact message bee-window-open" data-path="{{ $path }}">
         <i class="file powerpoint outline blue large icon"></i>{{ path.Base .Name }}
+    </div>
+    {{ else if or (eq $ext ".wav") (eq $ext ".mp3") (eq $ext ".ogg")}}
+    <div class="ui compact message bee-modal-player" data-path="{{ $path }}" data-base="{{ path.Base .Name }}">
+        <i class="file audio outline orange large icon"></i>{{ path.Base .Name }}
     </div>
     {{ else }}
     <div class="ui compact message bee-window-open" data-path="{{ $path }}">

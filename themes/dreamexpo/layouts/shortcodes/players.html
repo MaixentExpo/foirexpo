@@ -1,0 +1,23 @@
+<!-- 
+    Cartes de players audio
+    param 0 : répertoire des images
+    param 1 : image couverure
+-->
+{{$dir := .Get 0 | default "/"}}
+{{$cover := .Get 1 | default "/img/player.jpg"}}
+<div class="ui segment">
+    {{ range (readDir (printf "/content%s" $dir ) ) }}
+    {{ $path := (printf "%s/%s" $dir .Name )}}
+    {{ $base := path.Base .Name }}
+    {{ $ext := (path.Ext .Name) }}
+    {{ $noext := strings.Replace $base $ext "" }}
+    {{ if or (eq $ext ".wav") (eq $ext ".mp3") (eq $ext ".ogg")}}
+    <div class="ui compact icon message bee-player" data-path="{{ $path }}">
+        <i class="file audio outline orange icon"></i>
+        <div class="content">
+            <p>{{ $noext }}</p>
+        </div>
+    </div>
+    {{ end }}
+    {{ end }}
+</div>

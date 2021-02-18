@@ -1,0 +1,32 @@
+<!-- 
+    Bouton icône + texte
+    icone : chemin de l'icône
+    titre : le texte à droite du bouton
+    image : lien vers un image
+    pdf   : lien vers un pdf
+    lien  : lien vers une page du site
+-->
+{{$icon := .Get "icone" | default ""}}
+{{$title := .Get "titre" | default ""}}
+{{$img := .Get "image" | default ""}}
+{{$pdf := .Get "pdf" | default ""}}
+{{$path := .Get "lien" | default ""}}
+{{ if $path }}
+<div class="ui compact icon message bee-open" data-path="{{ $path }}">
+    <i class="{{$icon}} icon"></i>
+    {{ if $title }}
+    <div class="content">
+        <p>{{ $title }}</p>
+    </div>
+    {{end}}
+</div>
+{{else}}
+<div class="ui compact icon message bee-modal-image" data-img="{{ $img }}" data-pdf="{{ $pdf }}">
+    <i class="{{$icon}} icon"></i>
+    {{ if $title }}
+    <div class="content">
+        <p>{{ $title }}</p>
+    </div>
+    {{end}}
+</div>
+{{end}}

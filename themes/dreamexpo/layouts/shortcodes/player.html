@@ -1,0 +1,15 @@
+<!-- 
+    Un player audio
+    param 0 : le chemin du fichier
+    TODO: non utilisé et non testé pour l'instant
+-->
+{{$path := .Get 0 | default "/"}}
+{{ $base := path.Base $path }}
+{{ $ext := (path.Ext $path) }}
+{{ $noext := strings.Replace $base $ext "" }}
+<div class="ui compact icon message bee-player" data-path="{{ $path }}">
+    <i class="file audio outline orange icon"></i>
+    <div class="content">
+        <p>{{ $noext }}</p>
+    </div>
+</div>

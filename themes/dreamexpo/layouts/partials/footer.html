@@ -8,11 +8,25 @@
         <img class="image center aligned" style="max-height: 100%;max-width: 100%;" src="">
     </div>
 </div>
+<!-- Modal Play -->
+<div id="bee-modal-player" class="ui tiny modal">
+    <div class="actions">
+        <div class="ui cancel button">Fermer</div>
+    </div>
+    <div class="content">
+        <div class="ui compact icon message bee-player" data-path="à venir">
+            <i class="play icon"></i>
+            <div class="content">
+                <p>à venir</p>
+            </div>
+        </div>
+    </div>
+</div>
 <a href="javascript:" id="return-to-top"><i class="arrow up icon"></i></a>
 <script>
     // Variables globales traitées dans bee-script.js
-    var $IsServer = '{{.Site.IsServer}}';
-    var $FilePath = '{{ with .File }}{{ .Path }}{{ end }}';
+    var $BeeIsServer = '{{.Site.IsServer}}';
+    var $BeeFilePath = '{{ with .File }}{{ .Path }}{{ end }}';
 </script>
 <!-- end modal image -->
 <script src="{{ "/js/jquery.min.js" | relURL }}"></script>

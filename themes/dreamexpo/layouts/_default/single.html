@@ -12,21 +12,13 @@
 {{ end }}
 {{ end }}
 
-{{ if .Site.Params.valine }}
-<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
-{{ end }}
-
 {{ end }}
 
 {{ define "main" }}
 <div class="ui centered relaxed grid dream-grid">
-    <div class="sixteen wide mobile sixteen wide tablet twelve wide computer column markdown-body dream-single" id="dream-save-post-as-img">
-        {{ if and .Params.Cover .Site.Params.showSummaryCoverInPost }}
-        <section class="ui top attached segment cover">
-            <div class="cover-img" style="background-image: url('{{ .Params.Cover }}');"></div>
-        </section>
-        {{ end }}
-        <section class="ui {{ if not .Site.Params.showSummaryCoverInPost }}top {{ end }}attached segment">
+    <div class="sixteen wide mobile sixteen wide tablet twelve wide computer column markdown-body dream-single {{.Params.Style}}" 
+    id="dream-save-post-as-img">
+        <section class="ui top attached segment">
             <header>
                 <h1 class="ui large header">
                     {{ .Title }}
@@ -42,7 +34,7 @@
         <footer class="ui attached segment" data-html2canvas-ignore>
             {{ if isset .Params "tags" }}
             {{ range $tag := .Params.tags }}
-            <a class="ui label" href="{{ `tags/` | relLangURL }}{{ $tag | urlize }}" title="{{ $tag }}">#{{ $tag }}</a>
+            <a class="ui label" href="{{ `tags/` | relLangURL }}{{ $tag | urlize }}/" title="{{ $tag }}">#{{ $tag }}</a>
             {{ end }}
             {{else}}<i class="award red icon"></i>
                 {{ end }}

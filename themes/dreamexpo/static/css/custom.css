@@ -1,9 +1,13 @@
 /* Personnalisation */
 
+body, .ui.header {
+    font-family: 'Jost', sans-serif;
+}
+
 .bee-admin, .bee-hidden {
     display: none !important;
 }
-.bee-edit-open, .bee-open, .bee-modal-image, .bee-window-open {
+.bee-edit-open, .bee-open, .bee-modal-image, .bee-window-open, .bee-modal-player, .bee-player {
     cursor: pointer;
 }
 .ui.segment, .ui.segments .segment {
@@ -18,6 +22,12 @@
     margin: 0.5em;
     padding: 0.5em 1em;
 }
+.ui.icon.message.bee-player
+, .ui.icon.message.bee-modal-image 
+, .ui.icon.message.bee-open 
+{
+    width: inherit;
+}
 
 /* markdown */
 .markdown-body {
@@ -26,6 +36,21 @@
 .markdown-body h4 {
     color: red;
     text-align: center;
+}
+/* bee-chanson */
+.bee-chanson {
+    font-family: 'Rancho', cursive;
+    font-size: 1.7em;
+    color:saddlebrown;
+}
+.bee-chanson em {
+    font-family: 'Rancho', cursive;
+    /* font-size: 1.7em; */
+    color:grey;
+}
+.bee-chanson .ui.large.header {
+    font-family: 'Rancho', cursive;
+    font-size: 2em;
 }
 
 /* RETURN TO TOP */
