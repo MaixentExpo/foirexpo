@@ -7,13 +7,8 @@ draft: false
 cover: /site/logo-comite-foires.jpg
 ---
 <!--more-->
-{{< colonnes >}}
+{{< image image="/site/logo-comite-foires.jpg" taille="petite" position="droite" >}}
 
-{{< colonne "four" >}}
-{{< image image="/site/logo-comite-foires.jpg" taille="petite" >}}
-{{< /colonne >}}
-
-{{% colonne "twelve" %}}
 > **Ce Site Web est la propriété de l'association
 Comité des Foires - Porte Chalon - 79400 Saint-Maixent l'École
 et le responsable de la publication est le président de l'association.**
@@ -26,6 +21,3 @@ Les sites reliés directement ou indirectement à ce site ne sont pas sous le co
 
 **Aucune données liées à l'utilisateur ne sont utilisées.** 
 
-{{< /colonne >}}
-
-{{< colonnes >}}

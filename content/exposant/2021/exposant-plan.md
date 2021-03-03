@@ -17,24 +17,24 @@ cover: /exposant/cover-plan.jpg
 
 ###### Cliquez sur l'image pour l'agrandir et télécharger éventuellement le PDF
 
-{{< diaporama taille="medium" >}}
+{{<cartes taille="medium" >}}
 
-{{< diapo titre="Plan Général du parc d'Exposition" image="/exposant/2021/plan/0 - Plan Foire.jpg"  pdf="/exposant/2021/plan/0 - Plan Foire.pdf" >}}
+{{<carte titre="Plan Général du parc d'Exposition" image="/exposant/2021/plan/0 - Plan Foire.jpg"  pdf="/exposant/2021/plan/0 - Plan Foire.pdf" >}}{{</carte>}}
 
-{{< diapo titre="A & B - Stands Clos" image="/exposant/2021/plan/A & B - Stands Clos.jpg"  pdf="/exposant/2021/plan/A & B - Stands Clos.pdf" >}}
+{{<carte titre="A & B - Stands Clos" image="/exposant/2021/plan/A & B - Stands Clos.jpg"  pdf="/exposant/2021/plan/A & B - Stands Clos.pdf" >}}{{</carte>}}
 
-{{< diapo titre="C - Grand Tivoli" image="/exposant/2021/plan/C - Grand Tivoli.jpg"  pdf="/exposant/2021/plan/C - Grand Tivoli.pdf" >}}
+{{<carte titre="C - Grand Tivoli" image="/exposant/2021/plan/C - Grand Tivoli.jpg"  pdf="/exposant/2021/plan/C - Grand Tivoli.pdf" >}}{{</carte>}}
 
-{{< diapo titre="D - Grand Hall" image="/exposant/2021/plan/D - Grand Hall.jpg"  pdf="/exposant/2021/plan/D - Grand Hall.pdf" >}}
+{{<carte titre="D - Grand Hall" image="/exposant/2021/plan/D - Grand Hall.jpg"  pdf="/exposant/2021/plan/D - Grand Hall.pdf" >}}{{</carte>}}
 
-{{< diapo titre="D - Petit Hall" image="/exposant/2021/plan/D - Petit Hall.jpg"  pdf="/exposant/2021/plan/D - Petit Hall.pdf" >}}
+{{<carte titre="D - Petit Hall" image="/exposant/2021/plan/D - Petit Hall.jpg"  pdf="/exposant/2021/plan/D - Petit Hall.pdf" >}}{{</carte>}}
 
-{{< diapo titre="E - Plan Central Foire" image="/exposant/2021/plan/E - Plan Central Foire.jpg"  pdf="/exposant/2021/plan/E - Plan Central Foire.pdf" >}}
+{{<carte titre="E - Plan Central Foire" image="/exposant/2021/plan/E - Plan Central Foire.jpg"  pdf="/exposant/2021/plan/E - Plan Central Foire.pdf" >}}{{</carte>}}
 
-{{< diapo titre="F - Tivolis DALOS" image="/exposant/2021/plan/F - Tivolis DALOS.jpg"  pdf="/exposant/2021/plan/F - Tivolis DALOS.pdf" >}}
+{{<carte titre="F - Tivolis DALOS" image="/exposant/2021/plan/F - Tivolis DALOS.jpg"  pdf="/exposant/2021/plan/F - Tivolis DALOS.pdf" >}}{{</carte>}}
 
-{{< diapo titre="G & I - Plan des Allées" image="/exposant/2021/plan/G & I - Plan des Allées.jpg"  pdf="/exposant/2021/plan/G & I - Plan des Allées.pdf" >}}
+{{<carte titre="G & I - Plan des Allées" image="/exposant/2021/plan/G & I - Plan des Allées.jpg"  pdf="/exposant/2021/plan/G & I - Plan des Allées.pdf" >}}{{</carte>}}
 
-{{< diapo titre="J - Parc Voitures" image="/exposant/2021/plan/J - Parc Voitures.jpg"  pdf="/exposant/2021/plan/J - Parc Voitures.pdf" >}}
+{{<carte titre="J - Parc Voitures" image="/exposant/2021/plan/J - Parc Voitures.jpg"  pdf="/exposant/2021/plan/J - Parc Voitures.pdf" >}}{{</carte>}}
 
-{{< /diaporama >}}
+{{</cartes >}}

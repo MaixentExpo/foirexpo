@@ -7,8 +7,4 @@ draft: false
 cover: /site/icon-nos-soutiens.png
 ---
 <!--more-->
-{{< colonnes >}}
-{{< colonne "ten" >}}
-{{< image image="/site/icon-nos-soutiens.png" >}}
-{{< /colonne >}}
-{{< /colonnes >}}
+{{< image image="/site/icon-nos-soutiens.png" taille="grande">}}

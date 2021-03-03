@@ -5,7 +5,7 @@ baseURL: "/"
 languageCode: "fr-FR"
 defaultContentLanguage: "fr"
 
-theme: "dreamexpo"
+theme: "beedream"
 RelativeURLs: true
 CanonifyURLs: true
 
