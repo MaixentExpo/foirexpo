@@ -1,3 +1,11 @@
 
 
 theme: "beedream"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    style: friendly # monokai dracula friendly
+    
