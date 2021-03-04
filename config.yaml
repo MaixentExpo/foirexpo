@@ -1,39 +1,3 @@
 
-title: "TITRE"
-
-baseURL: "/"
-languageCode: "fr-FR"
-defaultContentLanguage: "fr"
 
 theme: "beedream"
-RelativeURLs: true
-CanonifyURLs: true
-
-params:
-  background: "grey"
-  linkColor: "seagreen"
-  rss: true
-
-  email: "philippe.billerot@gmail.com"
-  github: "MaixentExpo"
-  siteStartYear: 2020
-  version: 21.2.18
-
-  enableGitInfo: true
-
-  # Url du site pour éditer les pages directement
-  # Utilisation href="{{printf .Site.Params.HugoServerAdmin .Page.path}}"
-  HugoServerAdmin: "http://localhost:8080/victor/document/%s"
-  
-  enableRobotsTXT: true
-
-  advanced:
-    customCSS:
-    - "css/custom.css"
-    customJS:
-    
-markup:
-  markup.goldmark:
-    markup.goldmark.renderer:
-      unsafe: true
-
