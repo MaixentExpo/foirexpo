@@ -1,8 +1,9 @@
 ---
 title: Publier la mise à jour sur Github
 date: 2021-02-01
-categories:
-- help
+draft: false
+_build:
+   list: false
 cover: /site/help/cover.jpg
 ---
 <!--more-->

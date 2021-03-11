@@ -1,10 +1,10 @@
 ---
 title: Informations légales
 date: 2019-10-02
-categories: 
-- links
 draft: false
 cover: /site/logo-comite-foires.jpg
+_build:
+   list: false
 ---
 <!--more-->
 {{< image image="/site/logo-comite-foires.jpg" taille="petite" position="droite" >}}

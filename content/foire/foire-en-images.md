@@ -1,13 +1,13 @@
 ---
 title: Les Foires en images
 date: 2020-10-22
-categories: 
-- links
 draft: false
+_build:
+  list: false
 ---
 <!--more-->
 Toutes les images
-{{<cartes taille="petite">}}
+{{<cartes taille="s">}}
 
 {{<carte titre="1992" image="/foire/affiches/1992.jpg" >}}{{</carte>}}
 {{<carte titre="1993" image="/foire/affiches/1993.jpg" >}}{{</carte>}}

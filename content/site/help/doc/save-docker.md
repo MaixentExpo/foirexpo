@@ -1,8 +1,8 @@
 ---
 title: Sauvegarder la configuration de DOCKER
 date: 2021-02-01
-categories:
-- help
+_build:
+   list: false
 cover: /site/help/cover.jpg
 ---
 <!--more-->

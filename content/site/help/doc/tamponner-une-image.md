@@ -1,8 +1,8 @@
 ---
 title: Tamponner une image
 date: 2021-02-01
-categories:
-- help
+_build:
+   list: false
 cover: /site/help/cover.jpg
 ---
 <!--more-->

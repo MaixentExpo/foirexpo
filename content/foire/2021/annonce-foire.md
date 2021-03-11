@@ -17,11 +17,10 @@ cover: /foire/2021/cover.png
 <!--more-->
 ![](/foire/2021/banniere.png)
 
-### Le Comité des Foires du Saint Maixentais envisage l'organisation de la foire 2021 sous réserve des accords sanitaires.
-
+Le Comité des Foires du Saint Maixentais envisage l'organisation de la **foire 2021** sous réserve des accords sanitaires.  
 Ainsi, toute l’équipe de la Foire travaille actuellement pour que notre Foire Exposition puisse se tenir du
 
-#### Vendredi 9 Avril au Lundi 12 Avril inclus.
+{{<centre>}}{{<texte rouge>}}**Vendredi 9 Avril au Lundi 12 Avril inclus**.{{</texte>}}{{</centre>}}
 
 Les emplacements des exposants qui accepteront de participer seront identiques à ceux de 2020 ([lien vers les emplacements pre-enregistrés en 2020](/exposant/2021/exposant-plan/)).
 

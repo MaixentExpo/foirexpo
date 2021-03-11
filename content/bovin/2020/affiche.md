@@ -11,4 +11,4 @@ cover: /bovin/cover.png
 
 <!--more-->
 
-{{< image image="/bovin/2020/Affiche-Concours-Bovins-2020.jpg" taille="moyenne">}}
+{{< image image="/bovin/2020/Affiche-Concours-Bovins-2020.jpg" taille="l">}}

@@ -3,8 +3,8 @@ title: Espace Intranet du Comité de la foire
 draft: false 
 date: 2021-02-09
 
-categories: 
-- help
+_build:
+   list: false
 
 cover: /intrafoire/banniere.jpg
 ---

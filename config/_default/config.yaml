@@ -19,7 +19,7 @@ params:
 
 # Menu Links et Navigation
 menu:
-  links:
+  card:
   - name: "Foire en images"
     url: "/foire/foire-en-images/"
     weight: 10
