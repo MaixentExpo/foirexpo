@@ -1,0 +1,12 @@
+
+
+baseURL = "/"
+languageCode = "fr-FR"
+title = "My New Hugo Site"
+theme = "beedream"
+
+[params]
+  enableSearch = false
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
